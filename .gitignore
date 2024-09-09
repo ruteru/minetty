@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+
+# Vagrant
+.vagrant/
+
+# Virtual Box
+*.vbox
+*.vdi
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+
+# Network scan results (if you don't want to track these)
+scan_results/
+
+# SSH keys (never commit these to version control)
+*.pem
+*.pub
+id_rsa
+id_rsa.pub
