@@ -1,0 +1,50 @@
+version: '3'
+services:
+  router1:
+      image: frrouting/frr
+          container_name: router1
+              networks:
+                    net1:
+                            ipv4_address: 192.168.1.1
+                                  net2:
+                                          ipv4_address: 192.168.2.1
+
+                                            router2:
+                                                image: frrouting/frr
+                                                    container_name: router2
+                                                        networks:
+                                                              net2:
+                                                                      ipv4_address: 192.168.2.2
+                                                                            net3:
+                                                                                    ipv4_address: 192.168.3.1
+
+                                                                                      vm1:
+                                                                                          image: ubuntu
+                                                                                              container_name: vm1
+                                                                                                  networks:
+                                                                                                        net1:
+                                                                                                                ipv4_address: 192.168.1.10
+
+                                                                                                                  vm2:
+                                                                                                                      image: ubuntu
+                                                                                                                          container_name: vm2
+                                                                                                                              networks:
+                                                                                                                                    net3:
+                                                                                                                                            ipv4_address: 192.168.3.10
+
+                                                                                                                                            networks:
+                                                                                                                                              net1:
+                                                                                                                                                  driver: bridge
+                                                                                                                                                      ipam:
+                                                                                                                                                            config:
+                                                                                                                                                                    - subnet: 192.168.1.0/24
+                                                                                                                                                                      net2:
+                                                                                                                                                                          driver: bridge
+                                                                                                                                                                              ipam:
+                                                                                                                                                                                    config:
+                                                                                                                                                                                            - subnet: 192.168.2.0/24
+                                                                                                                                                                                              net3:
+                                                                                                                                                                                                  driver: bridge
+                                                                                                                                                                                                      ipam:
+                                                                                                                                                                                                            config:
+                                                                                                                                                                                                                    - subnet: 192.168.3.0/24
