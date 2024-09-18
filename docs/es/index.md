@@ -4,17 +4,17 @@
 
 ## Guías Principales
 
-- [Guía de Instalación](./en/installation.md) - Aprende a instalar el proyecto.
-- [Guía de Uso](./en/usage.md) - Descubre cómo utilizar el proyecto de manera efectiva.
-- [Preguntas Frecuentes](./en/faq.md) - Encuentra respuestas a las preguntas más comunes.
+- [Guía de Instalación](./installation.md) - Aprende a instalar el proyecto.
+- [Guía de Uso](./usage.md) - Descubre cómo utilizar el proyecto de manera efectiva.
+- [Preguntas Frecuentes](./faq.md) - Encuentra respuestas a las preguntas más comunes.
 
 ## Idiomas Disponibles
 
 Selecciona el idioma en el que prefieres leer la documentación:
 
-- [Inglés](./en/index.md)
-- [Español](./es/index.md)
-- [Italiano](./it/index.md)
+- [Inglés](../en/index.md)
+- [Español](./index.md)
+- [Italiano](../it/index.md)
 
 ## Contribuciones
 
