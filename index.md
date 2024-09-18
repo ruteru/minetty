@@ -12,9 +12,9 @@ Thank you for visiting our project documentation! Here you will find all the inf
 
 Choose your preferred language:
 
-- [English](./index.md)
-- [Spanish](../es/index.md)
-- [Italian](../it/index.md)
+- [English](./README.md)
+- [Spanish](./docs/es/index.md)
+- [Italian](./docs/it/index.md)
 
 ## Contributing
 
